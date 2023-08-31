@@ -30,7 +30,11 @@ def main():
                     parar()
 
                 case 3:
-                    pass
+                    os.system("cls")
+                    print("---CANCELAR RESERVA---")
+                    indice = int(input("Informe o ID do Cliente: "))
+                    tarefa.excluir_tarefa(indice)
+                    os.system("pause")
 
                 case 4:
                     print("...Saindo do programa")

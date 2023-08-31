@@ -16,12 +16,15 @@ class ToDoLIST:
         self.lista[self.indice] =[ self.descricao]
 
     def excluir_tarefa(self, indice: int):
-        if indice in self.lista
+        if indice in self.lista:
+            del self.lista[self.indice]
+        else:
+            print("Indice não encontrado")
 
 
     def gettlistar_tarefas(self):
         for chave,valor in self.lista.items():
-            print(f"{chave}. {valor}\n")
+            print(f"{chave} . {valor[0]}")
 
 
 
