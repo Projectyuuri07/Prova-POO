@@ -24,7 +24,7 @@ class ToDoLIST:
 
     def gettlistar_tarefas(self):
         for chave,valor in self.lista.items():
-            print(f"{chave} . {valor[0]}")
+            print(f"{chave}. {valor}\n")
 
 
 
