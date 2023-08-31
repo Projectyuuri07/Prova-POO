@@ -13,10 +13,10 @@ class ToDoLIST:
     def adicionar_tarefa(self, indice, descricao: str,):
         self.descricao = descricao
         self.indice = indice
-        self.lista[self.indice] = [self.descricao]
+        self.lista[self.indice] =[ self.descricao]
 
     def excluir_tarefa(self, indice: int):
-        pass
+        if indice in self.lista
 
 
     def gettlistar_tarefas(self):

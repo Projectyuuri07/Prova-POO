@@ -3,16 +3,15 @@ from classe import*
 def main():
     tarefa = ToDoLIST()
     contid = 0
+    sair = False
 
-    while True:
-
+    while sair == False:
         try:
 
             limpar()
             print("--|ToDo List|--\n [1]-Adicionar uma tarefa\n [2]-Listar Tarefas\n [3]-Excluir Tarefas\n [4]-Sair")
-            opi = input("Digite a opção desejada>> ")
+            opi = int(input("Digite a opção desejada>> "))
             match opi:
-
                 case 1:
                     limpar()
                     print("--|INFORME A TAREFA|--\n\n")
@@ -36,7 +35,7 @@ def main():
                 case 4:
                     print("...Saindo do programa")
                     parar()
-                    break
+                    sair == True
                 
                 case _:
                     print("Opção invalida\n Escolha apenas as opções acima!")
